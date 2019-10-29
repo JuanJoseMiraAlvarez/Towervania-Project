@@ -12,6 +12,7 @@ public class Torre : MonoBehaviour
     private float tiempo_de_disparo;
     private float tiempo_de_mejora;
     private bool efecto_del_disparo;
+    private bool esta_activa;
 
     public int Precio { get => precio; set => precio = value; }
     public int Precio_de_mejora { get => precio_de_mejora; set => precio_de_mejora = value; }
@@ -21,8 +22,9 @@ public class Torre : MonoBehaviour
     public float Tiempo_de_disparo { get => tiempo_de_disparo; set => tiempo_de_disparo = value; }
     public float Tiempo_de_mejora { get => tiempo_de_mejora; set => tiempo_de_mejora = value; }
     public bool Efecto_del_disparo { get => efecto_del_disparo; set => efecto_del_disparo = value; }
+    public bool Esta_activa1 { get => esta_activa; set => esta_activa = value; }
 
-     public Torre() { }
+    public Torre() { }
 
     public void Detectar()
     {

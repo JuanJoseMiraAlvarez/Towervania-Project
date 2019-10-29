@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class MovimientoEnemigo2 : MonoBehaviour
 {
-    public float speed = 10f;
-
+    [SerializeField]
+    private float speed = 10f;
     private Transform target;
     private int wavepointIndex = 0;
 
@@ -31,11 +31,11 @@ public class MovimientoEnemigo2 : MonoBehaviour
     void GetNextWaypoint()
     {
 
-        if (wavepointIndex >= Waypoints2.waypoints2.Length-1)
+       /* if (wavepointIndex >= Waypoints2.waypoints2.Length-1)
         {
             Destroy(gameObject);
             return;
-        }
+        }*/
         wavepointIndex++;
         target = Waypoints2.waypoints2[wavepointIndex];
     }
